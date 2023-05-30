@@ -4,7 +4,7 @@ const TaskSchema = new mongoose.Schema(
     {
     toDo:{
         type: String,
-        required: [true, 'Please provide T  oDo task name'],
+        required: [true, 'Please provide ToDo task name'],
         maxlength: 50,
     },
     description:{
@@ -14,8 +14,8 @@ const TaskSchema = new mongoose.Schema(
     },
     status: {
         type: String,
-        enum: ['in progress', 'done', 'cancelled'],
-        default: 'in progress',
+        enum: ['pending', 'done', 'cancelled'],
+        default: 'pending',
     },
     createdBy: {
         type: mongoose.Types.ObjectId,
