@@ -61,7 +61,7 @@ const deleteTask = async (req, res) => {
     if(!task){
         throw new NotFoundError(`No task with id ${ taskId }`)
     }
-    res.status(StatusCodes.OK).send()
+    res.status(StatusCodes.OK).json({msg: "The entry was deleted."})
 }
 
 
