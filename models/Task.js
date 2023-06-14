@@ -4,7 +4,7 @@ const TaskSchema = new mongoose.Schema(
     {
     toDo:{
         type: String,
-        required: [true, 'Please provide T  oDo task name'],
+        required: [true, 'Please provide ToDo task name'],
         maxlength: 50,
     },
     description:{
